@@ -1,0 +1,13 @@
+.body {
+      border-style : solid;
+      border-color: black;
+      background-image:url("https://hdwallsbox.com/wallpapers/l/1920x1080/20/paper-money-dollar-bills-collage-currency-1920x1080-19244.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      background-blend-mode:soft-light;
+      font-weight: bolder;
+      background-position: center;
+      margin : 40px 40px 0px 40px;
+
+  }
