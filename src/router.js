@@ -1,11 +1,11 @@
-const handlers = require("./handlers");
+const handlers = require('./handlers');
 
 const router = (req, res) => {
   const url = req.url;
 
-  if (url === "/") {
+  if (url === '/') {
     handlers.handlerHome(req, res);
-  } else if (url.includes("/exchange")) {
+  } else if (url.includes('/exchange')) {
     handlers.handlerExchange(req, res);
   } else if (["/style.css", "/dom.js", "/currencyList.js"].includes(url)) {
     handlers.handlerPublic(req, res, url);
