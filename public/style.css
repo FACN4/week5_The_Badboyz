@@ -1,13 +1,41 @@
-.body {
-      border-style : solid;
-      border-color: black;
-      background-image:url("https://hdwallsbox.com/wallpapers/l/1920x1080/20/paper-money-dollar-bills-collage-currency-1920x1080-19244.jpg");
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-size: cover;
-      background-blend-mode:soft-light;
-      font-weight: bolder;
-      background-position: center;
-      margin : 40px 40px 0px 40px;
-
+@import url('https://fonts.googleapis.com/css?family=Patua+One');
+body {
+  background-image:url("https://hdwallsbox.com/wallpapers/l/1920x1080/20/paper-money-dollar-bills-collage-currency-1920x1080-19244.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-blend-mode:soft-light;
+  font-weight: bolder;
+  background-color: gray;
+  background-position: center;
+  padding: 5%;
   }
+h1{
+  display: flex;
+  justify-content: center;
+  font-family: 'Patua One', cursive;
+  }
+.container{
+  position: relative;
+  margin: auto;
+  max-width: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#btn{
+  margin: auto;
+  height: 50px;
+  width: 50px;
+  background-image: url("https://comps.canstockphoto.com/arrows-exchange-horizontal-flat-blue-and-illustration_csp28925328.jpg");
+  background-size: 100%;
+  border-color: black;
+  border-radius: 5px;
+}
+/* label{
+  display: flex;
+  justify-content: center;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  } */
