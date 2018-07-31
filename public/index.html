@@ -1,0 +1,77 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Currency Exchange Website</title>
+  <!-- <link rel="stylesheet" type="text/css" href="Public/style.css"> -->
+  <style media="screen">
+  body {
+
+        border-style : solid;
+        border-color: black;
+        background-image:url("https://hdwallsbox.com/wallpapers/l/1920x1080/20/paper-money-dollar-bills-collage-currency-1920x1080-19244.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-blend-mode:soft-light;
+        font-weight: bolder;
+        background-color: gray;
+        background-position: center;
+        margin : 100px 100px 0px 100px;
+
+    }
+    div{
+
+    }
+    h1{
+       display: flex;
+       justify-content: center;
+
+    }
+    label{
+      display: flex;
+      justify-content: center;
+    }
+    form{
+      display: flex;
+      flex-direction: column;
+
+    }
+  </style>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+  <h1>Currency Converter</h1>
+  <section class="userChoice">
+    <div>
+      <form class="form" action="index.html" method="post">
+        <label for=""> From</label>
+        <input id="inputBox" type="text" list="suggestion" placeholder="">
+        <datalist id= "suggestion">
+          <option value="1">
+        </datalist>
+        <label for="">To </label>
+        <input id="inputBox2" type="text" list="suggestion2" placeholder="">
+        <datalist id= "suggestion2">
+          <option value="2">
+        </datalist>
+        <button id ="btn" type="button">Get Exchange Rate</button>
+      </form>
+    </div>
+  </section>
+  <section class="exchangeRate">
+    <label for="">exchange rate: . . . . </label>
+  </section>
+  <section class="news">
+
+  </section>
+  <script src=".js"></script>
+</body>
+</html>
