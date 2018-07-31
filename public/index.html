@@ -42,8 +42,7 @@
   </style>
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
-
-  <link rel="stylesheet" href="styles.css">
+  <!-- <link rel="stylesheet" href="styles.css"> -->
 
 </head>
 
@@ -51,7 +50,7 @@
   <h1>Currency Converter</h1>
   <section class="userChoice">
     <div>
-      <form class="form" action="index.html" method="post">
+      <form class="form" action="/exchange" method="post">
         <label for=""> From</label>
         <input id="inputBox" type="text" list="suggestion" placeholder="">
         <datalist id= "suggestion">
@@ -60,7 +59,7 @@
         <label for="">To </label>
         <input id="inputBox2" type="text" list="suggestion2" placeholder="">
         <datalist id= "suggestion2">
-          <option value="2">
+          <option value="3324">
         </datalist>
         <button id ="btn" type="button">Get Exchange Rate</button>
       </form>
@@ -72,6 +71,7 @@
   <section class="news">
 
   </section>
-  <script src=".js"></script>
+  <script src = "./currencyList.js"></script>
+  <script src="./dom.js"></script>
 </body>
 </html>

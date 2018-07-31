@@ -16,6 +16,7 @@ const handlerHome = function(req, res) {
         return;
       } else {
         res.writeHead(200, { "content-type": "text/html" });
+        logic.fillDropDownList;
         res.end(file);
       }
     }
