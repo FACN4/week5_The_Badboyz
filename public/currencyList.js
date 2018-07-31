@@ -1,4 +1,4 @@
-{
+var currencyList = {
   "results": {
     "ALL": {
       "currencyName": "Albanian Lek",
