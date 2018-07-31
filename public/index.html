@@ -1,26 +1,33 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
 <head>
   <title>Currency Exchange Website</title>
   <meta charset = "utf-8" name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css" type "text/css">
+  <link rel="stylesheet" href="style.css" type = "text/css">
+  <!-- <link rel="stylesheet" href="../assets/dollars.jpg" type = "image/jpg"> -->
 </head>
 <body>
   <h1>Currency Converter</h1>
   <section class="userChoice">
       <form class="form" action="index.html" method="post">
-        <label for=""> From</label>
-        <input id="inputBox" type="text" list="suggestion" placeholder="">
-        <datalist id= "suggestion">
-          <option value="1">
-        </datalist>
-        <label for="">To </label>
-        <input id="inputBox2" type="text" list="suggestion2" placeholder="">
-        <datalist id= "suggestion2">
-          <option value="2">
-        </datalist>
-        <button id ="btn" type="button">Get Exchange Rate</button>
+        <div class = "container">
+          <div>
+            <input id="inputBox" type="text" list="suggestion" placeholder="">
+            <datalist id= "suggestion">
+              <option value="1">
+            </datalist>
+          </div>
+          <div>
+            <button id ="btn" type="button"></button>
+          </div>
+          <div>
+            <input id="inputBox2" type="text" list="suggestion2" placeholder="">
+            <datalist id= "suggestion2">
+              <option value="2">
+            </datalist>
+          </div>
+        </div>
       </form>
   </section>
   <section class="exchangeRate">
