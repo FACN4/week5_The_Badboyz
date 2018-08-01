@@ -9,10 +9,10 @@
 <body>
   <h1>Currency Converter</h1>
   <section class="userChoice">
-      <form class="form" action="index.html" method="post">
+      <form class="form" action="/exchge" method="get">
         <div class = "container">
           <div>
-            <input id ="inputBox" type="text" list="suggestion" placeholder="">
+            <input required id ="inputBox" type="text" name ='from' list="suggestion" placeholder="">
             <datalist id = "suggestion">
               <option value="1">
             </datalist>
@@ -22,7 +22,7 @@
               <source type="audio/mpeg" src="http://soundbible.com/mp3/poker-chips-daniel_simon.mp3"/>
                 Your browser does not support audio content.
             </audio>
-            <button id = "btn" type="button" onclick="playAudio()">
+            <button id = "btn" type="submit" onclick="playAudio()">
               <audio id = "poker-audio">
                   <source
                       type="audio/mpeg"
@@ -32,7 +32,7 @@
         </button>
           </div>
           <div>
-            <input id="inputBox2" type="text" list="suggestion2" placeholder="">
+            <input required id="inputBox2" type="text" name = 'to' list="suggestion2" placeholder="">
             <datalist id= "suggestion2">
               <option value="2">
             </datalist>

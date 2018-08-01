@@ -16,7 +16,6 @@ Object.keys(list).forEach((currency) => {
 const audio = document.getElementById('poker-audio');
 
 function playAudio() {
-  console.log('where da audio');
   audio.play();
 }
 // const exchangeBtn = document.getElementById('btn');
