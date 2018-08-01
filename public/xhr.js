@@ -1,9 +1,10 @@
-function xhrAPI(url) {
+/*eslint-disable*/
+function xhrAPI(url, callback) {
   const xhr = new XMLHttpRequest();
-  xhr.onreadystatechange = function () {
-    if (xhr.readyState == 4 && xhr.status == 200) {
-      const res = JSON.parse(xhr.responseText);
-      console.log(res);
+  xhr.onreadystatechange = function request() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      const res = JSON.stringify(xhr.responseText);
+      callback(res);
     }
   };
   xhr.open('GET', url, true);
