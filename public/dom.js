@@ -18,13 +18,23 @@ Object.keys(list).forEach(function(currency) {
 // Click event for the exchange button
 const audio = document.getElementById('poker-audio');
 
-const input1Value = document.getElementById('inputBox').value;
-const input2Value = document.getElementById('inputBox2').value;
-
-function sendForm() {
-  console.log('hello');
+function appendExchangeRate(res) {
+  let resArray = res.split(':');
+  let val = resArray[resArray.length - 1].replace(/}/g, '');
+  let exchangeSection = document.getElementById('exchangeRate');
+  let label = document.createElement('label');
+  label.textContent = val;
+  exchangeSection.appendChild(label);
 }
-//
+function sendForm() {
+  let array1 = document.getElementById('inputBox').value.split(' ');
+  let array2 = document.getElementById('inputBox2').value.split(' ');
+  let string1 = array1[array1.length - 1];
+  let string2 = array2[array2.length - 1];
+  let query = '/exchange?q=' + string1 + '_' + string2;
+  xhrAPI(query, appendExchangeRate);
+}
+
 // function getCurr(value) {
 //   const splitted = value.split(' ');
 //   return splitted[splitted.length - 1];
@@ -33,6 +43,8 @@ function sendForm() {
 //   audio.play();
 // }
 // function getQuery() {
+//   let input1Value = document.getElementById('inputBox').value;
+//   let input2Value = document.getElementById('inputBox2').value;
 //   const firstCurr = getCurr(input1Value);
 //   const secondCurr = getCurr(input2Value);
 //   return '/exchange?q=' + firstCurr + '_' + secondCurr;
@@ -41,9 +53,10 @@ function sendForm() {
 // function sendForm() {
 //   playAudio();
 //   query += getQuery();
-//   xhrAPI(query);
+//   console.log(query);
+//   // xhrAPI(query);
 // }
-
+//
 // const exchangeBtn = document.getElementById('btn');
 //
 // exchangeBtn.addEventListener('click', playAudio(), false);

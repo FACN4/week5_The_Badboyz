@@ -28,10 +28,10 @@ const handlerPublic = (req, res, url) => {
     jpg: 'image/jpg',
     gif: 'image/gif',
   };
-  if(extension==='jpg'){
-    pathfile=path.join(__dirname, '..', url)
-  }else{
-    pathfile=path.join(__dirname, '..', 'public', url)
+  if (extension === 'jpg') {
+    pathfile = path.join(__dirname, '..', url);
+  } else {
+    pathfile = path.join(__dirname, '..', 'public', url);
   }
   fs.readFile(pathfile, (err, file) => {
     if (err) {
@@ -42,11 +42,19 @@ const handlerPublic = (req, res, url) => {
     }
   });
 };
-
 const handlerExchange = (req, res) => {
-  // var query = req.url.split('=')[1];
-  const query = 'USD_AUD';
-  httpReq(query);
+  const query = req.url.split('=')[1];
+  httpReq(query, (error, body) => {
+    if (error) {
+      console.log(error);
+      return;
+    }
+    res.end(body);
+  });
+  // console.log(JSON.stringify(httpReq(query)));
+  // res.writeHead(200, { 'content-type': 'application/JSON' });
+  // res.end(body);
+  // res.end(JSON.parse(body));
   // var exchangeRate = body.
 };
 

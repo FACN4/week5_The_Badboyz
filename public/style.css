@@ -37,8 +37,8 @@ form{
   }
   #btn{
     margin: auto;
-    height: 30px;
-    width: 30px;
+    height: 50px;
+    width: 50px;
     background-image: url("https://comps.canstockphoto.com/arrows-exchange-horizontal-flat-blue-and-illustration_csp28925328.jpg");
     background-size: 100%;
     border-color: black;
@@ -78,21 +78,21 @@ form{
         background-image:url('../assets/dollars.jpg');
     }
   button#btn{
-    height: 30px;
-    width: 30px;
+    height: 50px;
+    width: 50px;
     background-image: url("https://comps.canstockphoto.com/arrows-exchange-horizontal-flat-blue-and-illustration_csp28925328.jpg");
     background-size: 100%;
     border-color: black;
     border-radius: 5px;
   }
-  section.exchangeRate{
+  #exchangeRate{
     color: white;
   }
   h1{
     color: white;
   }
 
-    section.exchangeRate{
+    #exchangeRate{
       margin-top: 150px;
       font-size: 20px;
     }
