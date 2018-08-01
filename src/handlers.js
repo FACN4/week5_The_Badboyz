@@ -38,9 +38,11 @@ const handlerPublic = (req, res, url) => {
   });
 };
 
-const handlerExchange = (req, res, url) => {
-  const query = url;
+const handlerExchange = (req, res) => {
+  // var query = req.url.split('=')[1];
+  const query = 'USD_AUD';
   httpReq(query);
+  // var exchangeRate = body.
 };
 
 const handler404 = (req, res) => {
