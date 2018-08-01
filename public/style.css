@@ -54,10 +54,12 @@ form{
      outline: none;
   }
   input#inputBox:focus{
+    width: auto;
     border: 3px solid #555;
   }
 
   input#inputBox2{
+    width: auto;
     padding: 12px 20px;
      margin: 8px 0;
      box-sizing: border-box;
@@ -70,6 +72,7 @@ form{
     border: 3px solid #555;
 
   }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -97,6 +100,7 @@ form{
       font-size: 20px;
     }
     input#inputBox{
+      width: auto;
       padding: 8px 15px;
        margin: 8px 0;
        box-sizing: border-box;
@@ -110,6 +114,7 @@ form{
     }
 
     input#inputBox2{
+      width: auto;
       padding: 8px 15px;
        margin: 8px 0;
        box-sizing: border-box;

@@ -98,7 +98,6 @@ const currencyList = {
       id: 'BSD',
     },
     BAM: {
-      currencyName: 'Bosnia And Herzegovina Konvertibilna Marka',
       currencySymbol: 'KM',
       id: 'BAM',
     },
