@@ -9,7 +9,6 @@
 <body>
   <h1>Currency Converter</h1>
   <section class="userChoice">
-      <form class="form" action="/exchange" method="get">
         <div class = "container">
           <div>
             <input required id="inputBox" type="text" name ='from' list="suggestion1" >
@@ -22,7 +21,7 @@
               <source type="audio/mpeg" src="http://soundbible.com/mp3/poker-chips-daniel_simon.mp3"/>
                 Your browser does not support audio content.
             </audio>
-            <button id = "btn" type="submit" onclick="playAudio()">
+            <button id = "btn" onclick="sendForm()">
               <audio id = "poker-audio">
                   <source
                       type="audio/mpeg"
@@ -38,13 +37,13 @@
             </datalist>
           </div>
         </div>
-      </form>
   </section>
   <section class="exchangeRate">
     <label for="">exchange rate: . . . . </label>
   </section>
   <section class="news">
   </section>
+  <script src="./xhr.js"></script>
   <script src = "./currencyList.js"></script>
   <script src="./dom.js"></script>
 </body>
