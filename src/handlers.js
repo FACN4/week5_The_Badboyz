@@ -38,7 +38,10 @@ const handlerPublic = function (req, res, url) {
   });
 };
 
-const handlerExchange = function (req, res) {};
+const handlerExchange = function (req, res, url) {
+  response.writeHead(308, { Location: '/' });
+  const query = url.split();
+};
 
 const handler404 = function (req, res) {
   fs.readFile(path.join(__dirname, '..', 'public', '404.html'), (err, file) => {
