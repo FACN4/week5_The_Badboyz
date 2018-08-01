@@ -6,7 +6,7 @@ const router = (req, res) => {
   if (url === '/') {
     handlers.handlerHome(req, res);
   } else if (url.includes('/exchange')) {
-    handlers.handlerExchange(req, res);
+    handlers.handlerExchange(req, res, url);
   } else if (['/style.css', '/dom.js', '/currencyList.js'].includes(url)) {
     handlers.handlerPublic(req, res, url);
   } else {

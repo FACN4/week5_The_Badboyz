@@ -1,13 +1,14 @@
 const path = require('path');
 const fs = require('fs');
+const httpReq = require('./httpReq.js');
 // const logic = require('./logic');
 
-const handler500 = function (res) {
+const handler500 = (res) => {
   res.writeHead(500, { 'content-type': 'text/plain' });
   res.end('server error');
 };
 
-const handlerHome = function (req, res) {
+const handlerHome = (req, res) => {
   fs.readFile(path.join(__dirname, '..', 'public', 'index.html'), (err, file) => {
     if (err) {
       handler500(res);
@@ -18,7 +19,7 @@ const handlerHome = function (req, res) {
   });
 };
 
-const handlerPublic = function (req, res, url) {
+const handlerPublic = (req, res, url) => {
   const extension = url.split('.')[1];
   const extensionType = {
     html: 'text/html',
@@ -31,16 +32,18 @@ const handlerPublic = function (req, res, url) {
     if (err) {
       handler500(res);
     } else {
-      console.log(extensionType[extension]);
       res.writeHead(200, { 'Content-Type': extensionType[extension] });
       res.end(file);
     }
   });
 };
 
-const handlerExchange = function (req, res) {};
+const handlerExchange = (req, res, url) => {
+  const query = url;
+  httpReq(query);
+};
 
-const handler404 = function (req, res) {
+const handler404 = (req, res) => {
   fs.readFile(path.join(__dirname, '..', 'public', '404.html'), (err, file) => {
     if (err) {
       handler500(res);
