@@ -1,28 +1,24 @@
-
-var dropDown1 = document.getElementById("suggestion");
-var dropDown2 = document.getElementById("suggestion2");
-
-// console.log(currencyList.results.keys(results))
-  var list = currencyList.results
-  // console.log(list)
-  Object.keys(list).forEach(currency=>{
-    var type = list[currency]
-    let option = document.createElement("option")
-    let name = type.currencyName;
-    let symbol = type.currencySymbol;
-    option.value = `${name} ${symbol}`;
-    dropDown1.appendChild(option);
-    dropDown2.appendChild(option);
+// Add all the currencies to the dropdown menus
+const dropDown1 = document.getElementById('suggestion');
+const dropDown2 = document.getElementById('suggestion2');
+const list = currencyList.results;
+Object.keys(list).forEach((currency) => {
+  const type = list[currency];
+  const option = document.createElement('option');
+  const name = type.currencyName;
+  const symbol = type.currencySymbol;
+  option.value = `${name} ${symbol}`;
+  dropDown1.appendChild(option);
+  dropDown2.appendChild(option);
 });
 
+// Click event for the exchange button
+const audio = document.getElementById('poker-audio');
 
-// var fillDropDownList = data => {
-//   for (let key in data.results) {
-//     let name = key.currencyName;
-//     let symbol = key.currencySymbol;
-//     let option = document.creatElement("option");
-//     option.value = name + " " + symbol;
-//     datalist.appendChild(option);
-//     datalist2.appendChild(option);
-//   }
-// };
+function playAudio() {
+  console.log('where da audio');
+  audio.play();
+}
+// const exchangeBtn = document.getElementById('btn');
+//
+// exchangeBtn.addEventListener('click', playAudio(), false);

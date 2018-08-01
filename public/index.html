@@ -12,13 +12,24 @@
       <form class="form" action="index.html" method="post">
         <div class = "container">
           <div>
-            <input id="inputBox" type="text" list="suggestion" placeholder="">
-            <datalist id= "suggestion">
+            <input id ="inputBox" type="text" list="suggestion" placeholder="">
+            <datalist id = "suggestion">
               <option value="1">
             </datalist>
           </div>
           <div>
-            <button id ="btn" type="button"></button>
+            <audio id = "poker-audio">
+              <source type="audio/mpeg" src="http://soundbible.com/mp3/poker-chips-daniel_simon.mp3"/>
+                Your browser does not support audio content.
+            </audio>
+            <button id = "btn" type="button" onclick="playAudio()">
+              <audio id = "poker-audio">
+                  <source
+                      type="audio/mpeg"
+                      src="http://soundbible.com/mp3/poker-chips-daniel_simon.mp3"/>
+                  Your browser does not support audio content.
+          </audio>
+        </button>
           </div>
           <div>
             <input id="inputBox2" type="text" list="suggestion2" placeholder="">
