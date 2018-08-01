@@ -1,10 +1,16 @@
 /* eslint-disable */
 const request = require('request');
 
-const httpReq = query => {
+const httpReq = (query, callback) => {
   const APIurl = `https://free.currencyconverterapi.com/api/v6/convert?q=${query}`;
   request(APIurl, (error, response, body) => {
-    console.log(body);
+    if (error) {
+      callback(error);
+      return;
+    }
+    callback(null, body);
+    // console.log(body);
+    // return body;
   });
 };
 
