@@ -1,37 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Patua+One');
-body {
-  background-image:url("https://hdwallsbox.com/wallpapers/l/1920x1080/20/paper-money-dollar-bills-collage-currency-1920x1080-19244.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-blend-mode:soft-light;
-  font-weight: bolder;
-  background-color: gray;
-  background-position: center;
-  padding: 6%;
 
-  }
-h1{
-  display: flex;
-  justify-content: center;
-  font-family: 'Patua One', cursive;
-  }
-.container{
-  position: relative;
-  margin: auto;
-  max-width: 300px;
-  display: grid;
-  grid-template-columns: 1fr 0.5fr 1fr;
-}
-#btn{
-  margin: auto;
-  height: 30px;
-  width: 30px;
-  background-image: url("https://comps.canstockphoto.com/arrows-exchange-horizontal-flat-blue-and-illustration_csp28925328.jpg");
-  background-size: 100%;
-  border-color: black;
-  border-radius: 5px;
-}
+/*-----------------------------------*/
 /* label{
   display: flex;
   justify-content: center;
@@ -40,3 +8,117 @@ form{
   display: flex;
   flex-direction: column;
   } */
+/*-----------------------------------*/
+@media only screen and (min-width: 600px) {
+  @import url('https://fonts.googleapis.com/css?family=Patua+One');
+  body {
+    background-image:url('../assets/dollars.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode:soft-light;
+    font-weight: bolder;
+    background-color: gray;
+    background-position: center;
+    padding: 6%;
+
+    }
+  h1{
+    display: flex;
+    justify-content: center;
+    font-family: 'Patua One', cursive;
+    }
+  .container{
+    position: relative;
+    margin: auto;
+    max-width: 300px;
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 1fr;
+  }
+  #btn{
+    margin: auto;
+    height: 30px;
+    width: 30px;
+    background-image: url("https://comps.canstockphoto.com/arrows-exchange-horizontal-flat-blue-and-illustration_csp28925328.jpg");
+    background-size: 100%;
+    border-color: black;
+    border-radius: 5px;
+  }
+  input#inputBox{
+    padding: 12px 20px;
+     margin: 8px 0;
+     box-sizing: border-box;
+     border: 3px solid #ccc;
+     -webkit-transition: 0.5s;
+     transition: 0.5s;
+     outline: none;
+  }
+  input#inputBox:focus{
+    border: 3px solid #555;
+  }
+
+  input#inputBox2{
+    padding: 12px 20px;
+     margin: 8px 0;
+     box-sizing: border-box;
+     border: 3px solid #ccc;
+     -webkit-transition: 0.5s;
+     transition: 0.5s;
+     outline: none;
+  }
+  input#inputBox2:focus{
+    border: 3px solid #555;
+
+  }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        text-align: center;
+        background-image:url('../assets/dollars.jpg');
+    }
+  button#btn{
+    height: 30px;
+    width: 30px;
+    background-image: url("https://comps.canstockphoto.com/arrows-exchange-horizontal-flat-blue-and-illustration_csp28925328.jpg");
+    background-size: 100%;
+    border-color: black;
+    border-radius: 5px;
+  }
+  section.exchangeRate{
+    color: white;
+  }
+  h1{
+    color: white;
+  }
+
+    section.exchangeRate{
+      margin-top: 150px;
+      font-size: 20px;
+    }
+    input#inputBox{
+      padding: 8px 15px;
+       margin: 8px 0;
+       box-sizing: border-box;
+       border: 3px solid #ccc;
+       -webkit-transition: 0.5s;
+       transition: 0.5s;
+       outline: none;
+    }
+    input#inputBox:focus{
+      border: 3px solid #555;
+    }
+
+    input#inputBox2{
+      padding: 8px 15px;
+       margin: 8px 0;
+       box-sizing: border-box;
+       border: 3px solid #ccc;
+       -webkit-transition: 0.5s;
+       transition: 0.5s;
+       outline: none;
+    }
+    input#inputBox2:focus{
+      border: 3px solid #555;
+
+    }

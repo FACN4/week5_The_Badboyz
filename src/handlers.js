@@ -28,7 +28,12 @@ const handlerPublic = (req, res, url) => {
     jpg: 'image/jpg',
     gif: 'image/gif',
   };
-  fs.readFile(path.join(__dirname, '..', 'public', url), (err, file) => {
+  if(extension==='jpg'){
+    pathfile=path.join(__dirname, '..', url)
+  }else{
+    pathfile=path.join(__dirname, '..', 'public', url)
+  }
+  fs.readFile(pathfile, (err, file) => {
     if (err) {
       handler500(res);
     } else {
