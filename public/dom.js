@@ -29,7 +29,6 @@ function appendExchangeRate(res) {
   let firstC = resArray[3];
   firstC = firstC.substring(3, 10);
   let arr = firstC.split("_");
-
   let label = document.createElement("label");
   label.textContent =
     "the exchange rate from: " + arr[0] + " to: " + arr[1] + " is: " + val;

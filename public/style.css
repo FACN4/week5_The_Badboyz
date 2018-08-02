@@ -12,15 +12,17 @@ form{
 @media only screen and (min-width: 600px) {
   @import url('https://fonts.googleapis.com/css?family=Patua+One');
   body {
+
     background-image:url('../assets/dollars.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-blend-mode:soft-light;
     font-weight: bolder;
-    background-color: gray;
+    background-color: darkgray;
     background-position: center;
     padding: 6%;
+    text-align: center;
 
     }
   h1{
@@ -70,12 +72,25 @@ form{
     border: 3px solid #555;
 
   }
+  #exchangeRate{
+    padding-top: 50px;
+    /* color: red; */
+    font-size: 30px;
+    padding-left: 200px;
+
+  }
+  h1{
+    /* color: red; */
+    padding-left: 200px;
+    font-size: 60px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
     body {
         text-align: center;
         background-image:url('../assets/dollars.jpg');
+
     }
   button#btn{
     height: 50px;
