@@ -97,11 +97,6 @@ const currencyList = {
       currencySymbol: '$',
       id: 'BSD',
     },
-    BAM: {
-      currencyName: 'Bosnia And Herzegovina Konvertibilna Marka',
-      currencySymbol: 'KM',
-      id: 'BAM',
-    },
     CVE: { currencyName: 'Cape Verdean Escudo', id: 'CVE' },
     CNY: {
       currencyName: 'Chinese Yuan',
