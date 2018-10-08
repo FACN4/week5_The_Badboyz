@@ -12,5 +12,6 @@ It was built with vanilla JS, making a request to a currency API from the server
 1) clone the repository
 2) npm run go
 
-## File structure
+## File structure
+
 ![](https://user-images.githubusercontent.com/39595382/43452843-248cd642-94c1-11e8-936f-c4da748379e5.jpg)
